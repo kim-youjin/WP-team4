@@ -7,16 +7,11 @@ import Loginlink from "./loginlink.js"
 
 import Sharetech from "./img/sharetechlogo.png"
 
-const JoinPage = () => (
+function JoinPage() {
+  return (
     <div>
-      <div style={{width: '100%' , background: 'white', position: 'fixed', zIndex: 100}}>
-      <Loginlink style={{display: 'inline-block'}}/>
-      <Image src = {Sharetech} width="200" style={{display: 'inline-block', marginLeft: 50}}/>
-      <Search style={{display: 'inline-block'}}/>
-      <Category position='middle'/>
-      </div>
-      <h1>test</h1>
+      <h1>회원가입 페이지</h1>
     </div>
-
-    )
-export default JoinPage
+      );
+    }
+export default JoinPage;

@@ -8,6 +8,7 @@ import 'semantic-ui-css/semantic.min.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <App />
+    
 );
 
 // If you want to start measuring performance in your app, pass a function

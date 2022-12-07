@@ -3,9 +3,11 @@ import React from 'react';
 import Recommend from "./recommend.js"
 import Topclassslide from "./topclassslide.js"
 import Newclassslide from "./newclassslide.js"
+import Bannerslide from "./bannerslide.js"
 
 const MainClass = () => (
     <div>
+      <Bannerslide />
         <div>
         <p style={{margin: 30, fontSize: 30, textAlign: 'center'}}> 추천 카테고리 </p>
         <Recommend style={{display: 'inline-block'}} />
