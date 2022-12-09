@@ -19,6 +19,9 @@ const Loginlink = () => (
         <Link to="/joinpage"><Button class="ui primary labeled icon button" type="submit" style={{backgroundColor: 'white', color: "green", marginTop: '10px', marginBottom: '20px'}}>
                 join
               </Button></Link>
+              <Link to="/joinpage"><Button class="ui primary labeled icon button" type="submit" style={{backgroundColor: 'white', color: "green", marginTop: '10px', marginBottom: '20px'}}>
+                수강 목록
+              </Button></Link>
       {/* </Button.Group> */}
 
       {/* <Routes>

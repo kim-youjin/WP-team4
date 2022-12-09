@@ -3,6 +3,7 @@
 
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Link, Routes, Route,BrowserRouter } from "react-router-dom";
 
 import "./topclassslide.css";
 import "./slick.css";
@@ -27,10 +28,13 @@ export default class Responsive extends Component {
     return (
       <div className="container">
         <Slider {...settings} style={{margin: 30}}>
+
+          <Link to="/classpage">
           <div>
             <img src={Slide1} alt="" width="300px"/>
             <h3>강의1</h3>
           </div>
+          </Link>
 
           <div>
             <img src={Slide2} alt="" width="300px"/>

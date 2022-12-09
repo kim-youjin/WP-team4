@@ -9,9 +9,9 @@ import Bannerslide from "./bannerslide.js"
 import MainClass from './mainclass';
 import LoginPage from './loginpage';
 import JoinPage from './joinpage';
-
-//import banner1 from "./banner1.png"
-//import banner2 from "./banner2.png"
+import SearchPage from './searchpage';
+import ClassPage from './classpage';
+import { Search } from 'semantic-ui-react';
 
 function App() {
   return (
@@ -20,11 +20,7 @@ function App() {
 
       <Header />
 
-      <div style={{ height: '200px', display:'block' }}></div>
-
-      
-
-      
+      <div style={{ height: '180px', display:'block' }}></div>
 
     </div>
 
@@ -32,6 +28,8 @@ function App() {
     <Route path="/loginpage" element={< LoginPage />}></Route>
     <Route path="/joinpage" element={< JoinPage />}></Route>
     <Route path="/" element={<MainClass />}></Route>
+    <Route path="/searchpage" element={<SearchPage />}></Route>
+    <Route path="/classpage" element={<ClassPage />}></Route>
     
     </Routes>
     </BrowserRouter>
