@@ -1,0 +1,22 @@
+/* body {
+  background-color: #05486e;
+} */
+
+.container {
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  height: 320px;
+  border: 20px solid #fff;
+  box-sizing: border-box;
+}
+
+.slick-slide img {
+  object-fit: cover;
+  /* height: 500px; */
+  width: 100%;
+  box-sizing: border-box;
+}
