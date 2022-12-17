@@ -7,7 +7,7 @@ router.post("/", (req, res) => {
   post.title = req.body.title;
   post.content = req.body.content;
   // moment 모듈을 사용하여 날짜 포매팅
-  post.createdAt = moment().format("YYYY-MM-DD hh:mm:ss");
+  post.createdAt = moment().format("YYYY-MM-DD hh:mm");
 
   post.save((err, result) => {
     if (err) res.json(err);
@@ -35,7 +35,7 @@ router.get("/:post_id", (req, res) => {
 
 // 업데이트
 router.put("/:post_id", (req, res) => {
-    req.body.updatedAt = moment().format("YYYY-MM-DD hh:mm:ss");
+    req.body.updatedAt = moment().format("YYYY-MM-DD hh:mm");
     Post.findOneAndUpdate(
       { _id: req.params.post_id },
       req.body,
@@ -47,12 +47,12 @@ router.put("/:post_id", (req, res) => {
   });
 
 // 삭제
-router.delete("/:post_id", (req, res) => {
-    Post.deleteOne({ _id: req.params.post_id }, (err) => {
-      if (err) return res.json(err);
-      res.status(204).end();
-    });
+router.delete("/delete", (req, res) => {
+  Post.deleteOne({ _id: req.params.post_id }, (err) => {
+    console.log(_id)
+    if (err) return res.json(err);
+    res.status(200).json({ success: true});
+  });
 });
-
 
 module.exports = router;

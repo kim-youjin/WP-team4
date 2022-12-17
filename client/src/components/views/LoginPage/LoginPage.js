@@ -30,7 +30,8 @@ function LoginPage(props) {
         dispatch(loginUser(body))
         .then(response => {
             if(response.payload.loginSuccess) {
-                navigate('/')
+                navigate('/');
+                window.location.reload();
             } else {
                 alert('Error')
             }
@@ -50,20 +51,20 @@ function LoginPage(props) {
 
 
               <div class="field">
-                <label style={{color: "green", fontSize: 17, marginBottom: '10px'}}>ID</label>
+                <label style={{color: "green", fontSize: 17, marginBottom: '10px'}}>이메일</label>
                 <input type="email" value={Email} onChange={onEmailHandler} name="id" placeholder="Email" style={{marginBottom: '20px'}} required/>
               </div>
 
 
               <div class="field">
-                <label style={{color: "green", fontSize: 17, marginBottom: '10px'}}>Password</label>
+                <label style={{color: "green", fontSize: 17, marginBottom: '10px'}}>비밀번호</label>
                 <input type="password" value={Password} onChange={onPasswordHandler} name="pass" placeholder="Password" style={{marginBottom: '20px'}} required/>
               </div>
 
 
               <Button class="ui primary labeled icon button" type="submit" style={{color: "green", marginTop: '10px', marginBottom: '20px'}}>
                 <i class="unlock alternate icon"></i>
-                Login
+                로그인
               </Button>
               <Divider/>
               <div style={{color: "gray", fontSize: 15, marginBottom: '10px'}}>

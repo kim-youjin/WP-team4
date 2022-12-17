@@ -63,26 +63,27 @@ const Edit = () => {
   }, []);
 
   return (
-    <div className="container mb-3">
+    <div className="container mb-3" style={{position: 'center', width: '900px'}}>
       <nav aria-label="breadcrumb">
-        <ol className="breadcrumb p-1 pl-2 pr-2">
+        <ol className="breadcrumb p-1 pl-2 pr-2" style={{marginBottom:'40px'}}>
           <li className="breadcrumb-item">
-            <a href="/">Home</a>
+            <a href="/" style={{color: "green"}}>SHARETECH</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="/posts">Board</a>
+            <a href="/posts" style={{color: "green"}}>수강 후기</a>
           </li>
           <li className="breadcrumb-item">
-            <a href={`/posts/${form._id}`}>{form.title}</a>
+            <a href={`/posts/${form._id}`} style={{color: "green"}}>{form.title}</a>
           </li>
           <li className="breadcrumb-item active" aria-current="page">
-            Edit Post
+            게시물 수정
           </li>
         </ol>
       </nav>
       <form onSubmit={onSubmit}>
         <div className="form-group">
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title" 
+          style={{color: "green", fontSize: 25, marginTop: '20px', marginBottom: '20px'}}><b>강의명</b></label>
           <input
             type="text"
             id="title"
@@ -94,7 +95,8 @@ const Edit = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="content">Content</label>
+          <label htmlFor="content"
+          style={{color: "green", fontSize: 25, marginTop: '40px', marginBottom: '20px'}}><b>강의 후기</b></label>
           <textarea
             id="content"
             name="content"
@@ -105,11 +107,13 @@ const Edit = () => {
           ></textarea>
         </div>
         <div>
-          <a className="btn btn-primary" href={`/posts/${form._id}`}>
-            Back
+          <a className="btn btn-primary" href={`/posts/${form._id}`}
+        style={{fontSize: 18, backgroundColor: 'green', color: "White", width: '100px',marginTop: "20px", marginRight: "20px"}}>
+            취소
           </a>
-          <button type="submit" className="btn btn-primary">
-            Submit
+          <button type="submit" className="btn btn-primary"
+          style={{fontSize: 18, backgroundColor: 'green', color: "White", width: '100px',marginTop: "20px"}}>
+            수정
           </button>
         </div>
       </form>

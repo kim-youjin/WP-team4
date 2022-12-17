@@ -8,7 +8,7 @@ function Footer() {
       flexDirection: 'column', alignItems: 'center',
       justifyContent: 'center', fontSize:'12px'
     }}>
-       <p> Copyright ⓒ2022 Created by 전정민, 정운관. </p>
+       <p> Copyright ⓒ2022 Created by 이소흔, 김유진. </p>
        
     </div>
   )

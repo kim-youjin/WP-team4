@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Image, Card, Icon, Button, Divider, Comment, Form, Header } from 'semantic-ui-react'
 import Profile from "../../../img/profile.png"
 import moment from 'moment/moment';
+import { useSelector } from "react-redux";
+
 
 function SingleComment (detail) {
+
+
     return(<Comment>
         <Comment.Avatar src={Profile} />
         <Comment.Content>
-            <Comment.Author as='a'>20101213</Comment.Author>
+            <Comment.Author as='a'>userName</Comment.Author>
             <Comment.Metadata>
             <div>{detail.info.time}</div>
             </Comment.Metadata>
@@ -20,14 +24,15 @@ function SingleComment (detail) {
 
 class Comments extends React.Component{
 
-constructor(){
-    super()
-    this.state={
-        inputContent : "",
-        commentsList: []
-
+    constructor(){
+        super()
+        this.state={
+            inputContent : "",
+            userName:"",
+            commentsList: []
+    
+        }
     }
-}
 
     render() { 
         console.log(this.state.commentsList)

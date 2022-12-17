@@ -27,17 +27,17 @@ const PostList = () => {
 
   // 3.
   const postItems = posts.map((post, idx) => (
-    <PostItem post={post} key={idx} />
+    <PostItem post={post} key={idx}  style={{height:'40px',margin:'10px'}}/>
   ));
   return (
-    <div className="container mb-3">
-      <h2 className="mb-3">Board</h2>
-      <table className="board-table table table-sm border-bottom">
+    <div className="container mb-3" style={{position: 'center', width: '900px'}}>
+      <h1 className="mb-3" style={{color: "green"}}>수강 후기</h1>
+      <table className="board-table table table-sm border-bottom" style={{marginTop:'35px'}}>
         <thead className="thead-light">
-          <tr>
-            <th scope="col">Title</th>
-            <th scope="col" className="date">
-              Date
+          <tr style={{lineHeight:'40px'}}>
+            <th scope="col" style={{color: "green", fontSize:18}}>&nbsp;&nbsp;&nbsp;강의명</th>
+            <th scope="col" className="date" style={{color: "green", fontSize:18}}>
+              작성일
             </th>
           </tr>
         </thead>
@@ -46,8 +46,9 @@ const PostList = () => {
         </tbody>
       </table>
       <div>
-        <a className="btn btn-primary" href="/posts/new">
-          New
+        <a className="btn btn-primary" href="/posts/new"
+        style={{fontSize: 19, backgroundColor: 'green', color: "White", width: '150px',marginTop: "20px"}}>
+          글쓰기
         </a>
       </div>
     </div>

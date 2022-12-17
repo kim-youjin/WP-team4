@@ -92,12 +92,13 @@ export default class MenuExampleSecondaryPointing extends Component {
             onClick={this.handleItemClick}
             style={{fontSize: 17, marginLeft:50, marginRight:50}}
           />
+          <Link to="/posts">
           <Menu.Item
-            name='이벤트'
-            active={activeItem === '이벤트'}
+            name='수강 후기'
+            active={activeItem === '수강 후기'}
             onClick={this.handleItemClick}
             style={{fontSize: 17, marginLeft:50, marginRight:50}}
-          />
+          /></Link>
         </Menu>
 
       </div>
