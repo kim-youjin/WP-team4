@@ -41,6 +41,9 @@ function Loginlink () {
   } else {
     return(
     <div style={{marginTop: 30, marginRight: 30}}>
+                <Link to="/My"><Button class="ui primary labeled icon button" type="submit" style={{backgroundColor: 'white', color: "green", marginTop: '10px', marginBottom: '20px'}}>
+                  MY
+                </Button></Link>
                 <Button class="ui primary labeled icon button" onClick={onClickHandler} type="submit" style={{backgroundColor: 'white', color: "green", marginTop: '10px', marginBottom: '20px'}}>
                 <i class="unlock alternate icon"></i>
                   Logout

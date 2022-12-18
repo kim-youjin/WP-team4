@@ -16,15 +16,21 @@ import Photo from "../../../img/photo.png"
 const CardExampleColumnCount = () => (
   <Card.Group style={{width: 1200, margin: '0 auto'}} itemsPerRow={4} >
 
-<Link to="/searchpage">
-    <Card style={{ padding: 10,margin: 30, width: 240}} raised image={Drawing} />
-</Link>
-
+  <Link to="/drawingpage">
+      <Card style={{ padding: 10,margin: 30, width: 240}} raised image={Drawing} />
+  </Link>
+  <Link to="/musicpage">
     <Card style={{ padding: 10,margin: 30, width: 240}} href='#' raised image={Music} />
+  </Link>
+  <Link to="/programmingpage">
     <Card style={{ padding: 10,margin: 30, width: 240}} href='#' raised image={Programming} />
+  </Link>    
+  <Link to="/photopage">
     <Card style={{ padding: 10,margin: 30, width: 240}} href='#' raised image={Photo} />
-
-  </Card.Group>
+  </Link>    
+     
+  
+    </Card.Group>
 )
 
 export default CardExampleColumnCount

@@ -10,6 +10,11 @@ import LoginPage from './components/views/LoginPage/LoginPage.js';
 import RegisterPage from './components/views/RegisterPage/RegisterPage.js';
 import SearchPage from './components/views/List/searchpage';
 import VideoPage from './components/views/ClassDetail/videopage';
+import DrawingPage from './components/views/List/drawingpage.js';
+import MusicPage from './components/views/List/musicpage.js';
+import ProgrammingPage from './components/views/List/programmingpage.js';
+import PhotoPage from './components/views/List/photopage.js';
+
 import Auth from './hoc/auth'
 
 import PostList from './components/views/Post/PostList';
@@ -19,6 +24,8 @@ import Edit from './components/views/Post/Edit'
 import LectureList1 from './components/views/Lecture/LectureList1';
 import LectureList2 from './components/views/Lecture/LectureList2';
 import LectureDetail from './components/views/Lecture/LectureDetail';
+
+import MyList from './components/views/My/MyList';
 
 function App() {
   
@@ -43,6 +50,10 @@ function App() {
     <Route path="/" element={<MainClass />}></Route>
     <Route path="/searchpage" element={<SearchPage />}></Route>
     <Route path="/videopage" element={<VideoPage />}></Route>
+    <Route path="/drawingpage" element={<DrawingPage />}></Route> 
+    <Route path="/musicpage" element={<MusicPage />}></Route> 
+    <Route path="/photopage" element={<PhotoPage />}></Route>
+    <Route path="/programmingpage" element={<ProgrammingPage />}></Route> 
     <Route path="/posts" element={<PostList />}></Route>
     <Route path="/posts/:id" element={<PostDetail />}></Route>
     <Route path="/posts/:id/edit" element={<Edit />}></Route>
@@ -50,6 +61,7 @@ function App() {
     <Route path="/lectures" element={<LectureList1 />}></Route>
     <Route path="/lectures" element={<LectureList2 />}></Route>
     <Route path="/lectures/:id" element={<LectureDetail />}></Route>
+    <Route path="/my" element={<MyList />}></Route>
     </Routes>
 
     </BrowserRouter>
