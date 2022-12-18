@@ -25,8 +25,6 @@ import LectureList1 from './components/views/Lecture/LectureList1';
 import LectureList2 from './components/views/Lecture/LectureList2';
 import LectureDetail from './components/views/Lecture/LectureDetail';
 
-import MyList from './components/views/My/MyList';
-
 function App() {
   
   const AuthenticLoginPage  = Auth( LoginPage , false)
@@ -61,7 +59,6 @@ function App() {
     <Route path="/lectures" element={<LectureList1 />}></Route>
     <Route path="/lectures" element={<LectureList2 />}></Route>
     <Route path="/lectures/:id" element={<LectureDetail />}></Route>
-    <Route path="/my" element={<MyList />}></Route>
     </Routes>
 
     </BrowserRouter>

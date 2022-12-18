@@ -24,23 +24,27 @@ import Lecture15 from "../../../img/lecture15.png"
 
 
 function PhotoPage() {
+
+    const lec11 = '639f5cc4fb794eb9609a25c8';
+    const lec12 = '639f5cd9fb794eb9609a25c9';
+    
     return (
         <div className="container">
            <div className="row" style={{display: 'flex', justifyContent: 'space-evenly', width: '100%', marginBottom: '70px'}}>
                 
-            <Link to="/classpage">
+           <a href={`/lectures/${lec11}`}>
                 <div className="lecture">
                 <Image src={Lecture11} alt="" width="300px" rounded/>
                 <h3>강의11</h3>
                 </div>
-            </Link>
+            </a>
             
-            <Link to="/classpage">
+            <a href={`/lectures/${lec12}`}>
                 <div className="lecture">
                     <Image src={Lecture12} alt="" width="300px" rounded/>
                 <h3>강의12</h3>
                 </div>
-            </Link>
+            </a>
                 
                 <div className="lecture" style={{width:"300px"}}></div>
             </div>
